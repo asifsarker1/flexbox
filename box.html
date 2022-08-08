@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/b13badcc0e.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            width: 100%;
+        }
+        .span a{
+            text-decoration: none;
+            color: orange;
+        }
+        .span a:hover{
+            color:aliceblue;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px orange;
+            font-style: italic;
+
+        }
+        .one{
+            display: flex;
+            justify-content: space-around;
+        }
+        .sec{
+            display: flex;
+            justify-content: center;
+            margin: 8%;
+        }
+        .form-area{
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 30px 0px;
+            border-radius: 10px;
+        }
+        .form-area input{
+            font-size: 1.5em;
+            margin-top: 3%;
+        }
+        .form-area input[type=submit]{
+            border: 0px;
+            border-radius: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: white;
+            font-weight: 700;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding: 5px 0px;
+        }
+        .form-area input[type=submit]:hover{
+            border: 0px;
+            color: orange;
+            background-image: radial-gradient(black, gray, white);
+            box-shadow: 0px 0px 10px 0px orange;
+        }
+        .input-1{
+            border: 0.5px solid orange;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .input-1:hover{
+            color: orange;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            color: orange;
+            font-style: italic;
+            font-weight: 700;
+            border-radius: 20px;
+        }
+        p{
+            font-size: 100px;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="span">
+                <a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">Inventory</a>
+                <a href="">contact</a>
+            </span>
+            <span class="span">
+                <a  href=""><i class="fa-brands fa-google"></i></a>
+                <a  href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="sec">
+        <form action="" class="form-area">
+            <p><i class="fa-brands fa-mandalorian"></i></p>
+            <h2>Log In</h2>
+            <input class="input-1" type="email" name="email" id="" placeholder="Email" required>
+            <input class="input-1" type="password" name="password" id="" placeholder="Password" required>
+            <input class="input-2" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
